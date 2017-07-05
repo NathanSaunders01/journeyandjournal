@@ -1,0 +1,30 @@
+<div class="home-callout">
+  <h1 class="text-center">Welcome to Journey & Journal</h1>
+  <h1 class="text-center intro-message"><strong> - record the path - </strong></h1>
+</div>
+</br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <% if user_signed_in? %>
+        <h2>Last month, you wrote...</h2>
+        <hr>
+      <% else %>
+        <div class="col-md-6">
+          <div class="well">
+            <h2 class="text-center">Sign Up</h2>
+            <hr>
+            <%= link_to "Sign Up", new_user_registration_path, class:"btn btn-lg btn-block btn-success" %>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well">
+            <h2 class="text-center">Sign In</h2>
+            <hr>
+            <%= link_to "Sign In", new_user_session_path, class:"btn btn-lg btn-block btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

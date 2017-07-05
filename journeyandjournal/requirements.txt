@@ -1,0 +1,11 @@
+Journey and Journal
+
+* User must have private login access
+* User must only see their own posts
+* User's homepage should be their post from 1 week/1 month ago
+* Post must have following attributes:
+	- user_id
+	- category_id
+	- summary
+	- improvements
+	- objectives
